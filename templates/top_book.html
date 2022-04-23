@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
-    <span>AVG RATING: {{ avg_rating }}</span>
     {% for book in books %}
         <article>
+            <p>position: {{ forloop.counter }}</p>
             <p>title: {{ book.title }}</p>
             <p>author: {{ book.author.username }}</p>
             <p>rating: {{ book.rating }}</p>
